@@ -1,0 +1,125 @@
+@keyframes slideRight {
+  from {
+    transform: translateY(1rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+img {
+  width: 70%;
+  object-fit: cover;
+}
+
+.fa-html5 {
+  color: #a85151;
+}
+
+.fa-css3-alt {
+  color: rgb(39, 102, 185);
+}
+
+.fa-js {
+  color: #fffb01;
+}
+
+.fa-react {
+  color: aqua;
+}
+
+.fa-brands {
+  font-size: 50px;
+  width: 5rem;
+  transform: translateY(0);
+}
+
+.fa-brands:hover {
+  transform: translateY(20px);
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-image: linear-gradient(rgb(13, 29, 100), rgb(25, 2, 27));
+}
+
+.hero-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0.5rem 0 2rem 0;
+  text-align: center;
+}
+
+.hero-text .show {
+  text-decoration: none;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+  opacity: 0.9;
+}
+
+.show:hover {
+  background-color: #01959a;
+  color: #fff;
+  opacity: 1;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.van {
+  width: 270px;
+  margin-bottom: 30px;
+  border-radius: 25%;
+}
+
+.forslide {
+  animation-name: slideRight;
+  animation-duration: 1s;
+}
+
+@media screen and (max-width: 555px) {
+  .fa-brands {
+    font-size: 40px;
+    width: 5rem;
+  }
+
+  .van {
+    width: 200px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    padding: 10px 20px;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+  }
+
+  .hero-text .show {
+    padding: 0.6rem 1.1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+}
